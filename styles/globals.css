@@ -9,15 +9,15 @@
   --font-mono: 'poppins', sans-serif;
 
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 251, 215, 255;
   --background-end-rgb: 255, 255, 255;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
+    #1635ff33 0deg,
+    #081cff33 55deg,
+    #6b54ff33 120deg,
+    #1500ff33 160deg,
     transparent 360deg
   );
   --secondary-glow: radial-gradient(
@@ -25,20 +25,20 @@
     rgba(255, 255, 255, 0)
   );
 
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
+  --tile-start-rgb: 199, 231, 255;
+  --tile-end-rgb: 71, 102, 255;
   --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
+    #ffffff80,
+    #ffffff40,
+    #ffffff30,
+    #ffffff20,
+    #ffffff10,
+    #ffffff10,
+    #ffffff80
   );
 
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
+  --callout-rgb: 71, 102, 255;
+  --callout-border-rgb: 255, 255, 255;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 }
