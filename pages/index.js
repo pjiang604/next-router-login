@@ -40,8 +40,9 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
 
-        <label>First name:</label>
-        <input
+        <label className={styles.labelStyle}>First name:</label>
+        <input 
+          className={styles.inputStyle}
           type="text"
           id="first"
           name="first"
@@ -50,8 +51,9 @@ export default function Home() {
           onChange={(e => setFormData({...formData, firstName: e.target.value}))} /*grab what's in the "e" input, and store it in the setFormData "firstname" section */
         />
 
-        <label>Username:</label>
+        <label className={styles.labelStyle}>Username:</label>
         <input
+          className={styles.inputStyle}
           type="text"
           id="username"
           name="username"
@@ -61,7 +63,7 @@ export default function Home() {
           onChange={(e => setFormData({...formData, username: e.target.value}))} /*grab what's in the "e" input, and store it in the setFormData "username" section */
         />
 
-        <button type="submit" onClick={() => CheckLogin()}>Submit</button>
+        <button className={styles.button1} type="submit" onClick={() => CheckLogin()}>Submit</button>
       </main>
     </>
   )

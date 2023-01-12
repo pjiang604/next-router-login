@@ -35,7 +35,7 @@ export default function Counter() { /*The page name in the .js file is always up
                 <div className={styles.description}>
                     <p>
                         COUNTER PAGE&nbsp;
-                        <code className={styles.code}>Welcome {isUser}</code>
+                        <br></br><code className={styles.code}>Welcome {isUser}</code>
                     </p>
                     <div>
                         <a
