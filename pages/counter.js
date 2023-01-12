@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import { useEffect, useState } from 'react'
-import { useSearchParams } from 'next/navigation'
+import { redirect, useSearchParams } from 'next/navigation'
 import { useRouter } from 'next/router'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -83,10 +83,13 @@ export default function Counter() { /*The page name in the .js file is always up
                     <p className={inter.className}>
                         {number}
                     </p>
-                    <button onClick={() => setNumber(number + 1)}>Increment</button>
-                    <button onClick={() => setNumber(number - 1)}>Decrement</button>
-            </div>
-        </main>
+                    <div className={styles.buttonContainer}>
+                        <button className={styles.button1} onClick={() => setNumber(number + 1)}>Increment</button>
+                        <button className={styles.button1} onClick={() => setNumber(number - 1)}>Decrement</button>
+                        <button className={styles.button2} onClick={() => setNumber(0)}>Reset</button>
+                    </div>
+                </div>
+            </main>
         </>
     )
 }

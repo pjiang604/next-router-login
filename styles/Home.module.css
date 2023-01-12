@@ -7,6 +7,31 @@
   min-height: 100vh;
 }
 
+.buttonContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.button1 {
+  border-color: var(--white);
+  background-color: var(--blue2);
+  border-color: var(--blue1);
+  border-radius: 5px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  padding: 10px 0px;
+}
+
+.button2 {
+  border-color: var(--white);
+  background-color: var(--green1);
+  border-color: var(--green2);
+  border-radius: 5px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  padding: 10px 0px;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
@@ -40,10 +65,14 @@
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  width: var(--max-width);
-  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  text-align: center;
+  gap: 20px;
+  font-weight: 800;
+  font-size: 20px;
 }
 
 .card {
